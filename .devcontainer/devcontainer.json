@@ -1,32 +1,23 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/php-mariadb
 {
-    "name": "PHP & MySQL",
-    "image": "mcr.microsoft.com/devcontainers/php:8.1",
-    "features": {
-      "ghcr.io/devcontainers/features/mysql:1": {
-        "version": "5.7",
-        "rootPassword": "root",
-        "database": "app_db",
-        "user": "user",
-        "password": "password"
-      }
-    },
-    "customizations": {
-        "vscode": {
-            "settings": {
-                "php.validate.executablePath": "/usr/local/bin/php"
-            },
-            "extensions": [
-                "felixfbecker.php-intellisense",
-                "bmewburn.vscode-intelephense-client",
-                "mtxr.sqltools",
-                "xdebug.php-debug"
+	"name": "PHP & MariaDB",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 
-            ]
-        }
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
 
-    },
-    "postCreateCommand": "composer install",
-    "remoteUser": "vscode",
-    "forwardPorts": [80, 3306]
-  }
-  
+	// For use with PHP or Apache (e.g.php -S localhost:8080 or apache2ctl start)
+	"forwardPorts": [8080, 3306]
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\" /var/www/html"
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}

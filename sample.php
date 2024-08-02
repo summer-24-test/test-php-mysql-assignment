@@ -112,3 +112,16 @@ foreach ($rows as $row){
 ?>
     </code>
 </pre>
+
+
+
+http://www.worldcat.org/webservices/catalog/search/worldcat/opensearch?q=9780679723226&wskey=GgrerMlR2UzVGWjnG6z1gtr1psk2LqVHLo1Jt4xhH1NBwIUABsyKjG0IuqoiqlBtBowbRYVT6i14RUaK
+
+http://www.worldcat.org/webservices/catalog/search/worldcat/opensearch?q=9780415227285&wskey=GgrerMlR2UzVGWjnG6z1gtr1psk2LqVHLo1Jt4xhH1NBwIUABsyKjG0IuqoiqlBtBowbRYVT6i14RUaK
+
+
+http://www.worldcat.org/webservices/catalog/search/worldcat/opensearch?q=0679723226&wskey=GgrerMlR2UzVGWjnG6z1gtr1psk2LqVHLo1Jt4xhH1NBwIUABsyKjG0IuqoiqlBtBowbRYVT6i14RUaK
+
+https://watzekdi.net/wcapi/gists/authentication/php/alt-isbns-13.php?oclc=1031967864
+
+https://watzekdi.net/wcapi/gists/authentication/php/alt-isbns-13.php?oclc=71146627
