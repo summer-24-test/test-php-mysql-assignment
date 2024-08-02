@@ -37,7 +37,7 @@ function getTwentyListings($db){
 
 /* query with one SQL argument */
 function getListingsBelowPrice($db, $price){
-    echo $num;
+    
     try {
         $stmt = $db->prepare("select * from listings where price < ? order by price desc limit 20");   
         $data=array($price); //create an array of dynamic arguments, in the order they appear in the query
